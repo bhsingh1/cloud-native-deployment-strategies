@@ -10,20 +10,20 @@ spec:
     server: 'https://kubernetes.default.svc'
   source:
     path: gitops/cluster-config
-    repoURL: 'https://github.com/davidseve/cloud-native-deployment-strategies.git'
+    repoURL: 'https://github.com/bhsingh1/cloud-native-deployment-strategies.git'
     targetRevision: HEAD
     helm:
      parameters:
       - name: "bluegreen.enabled"
         value: "true"
       - name: "github.token"
-        value: "changeme_token"
+        value: "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"
       - name: "github.user"
-        value: "changeme_user"
+        value: "bhsingh1"
       - name: "github.mail"
-        value: "changeme_mail"
+        value: "bhsingh@redhat.com"
       - name: "github.repository"
-        value: "changeme_repository"
+        value: "cloud-native-deployment-strategies"
   project: default
   syncPolicy:
     automated:
